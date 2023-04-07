@@ -470,11 +470,12 @@ button:hover {
 button:focus {
   outline: none;
 }
-
+/* ******************************************************************* */
 /* projects section  */
 
 #projects {
   display: block;
+  height: auto;
 }
 
 .P-Title {
@@ -484,14 +485,16 @@ button:focus {
 }
 .projects-section {
   margin: 10px 10px;
-
   display: flex;
   justify-content: center;
-  align-items: center;
+
   gap: 10px;
 }
 .project-title {
   font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .project-content {
@@ -504,6 +507,34 @@ button:focus {
   flex-direction: column;
   border: solid 5px var(--navColor1);
   padding: 10px;
+  position: relative;
+}
+
+.image-wrapper {
+  height: 200px;
+  width: 100%;
+  overflow-y: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.project-1:hover .project-image {
+  bottom: 0;
+  transition: all 8s ease-in-out;
+}
+
+.project-image {
+  position: absolute;
+  bottom: -1120px;
+}
+.sc2-width-change {
+  bottom: -620px;
+}
+.sc3-width-change {
+  bottom: -1050px;
+}
+.sc4-height {
+  height: 100%;
+  bottom: 0;
 }
 .btn-git {
   width: 50%;
@@ -512,14 +543,19 @@ button:focus {
   width: 25%;
 }
 .view_project {
-  font-size: 12px;
+  font-size: 20px;
   height: 35px;
-  width: 150px;
+  width: 225px;
+  margin: 10px;
 }
 .view-align-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.btn-group > a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Media Query: Large Smartphone (Vertical) */
