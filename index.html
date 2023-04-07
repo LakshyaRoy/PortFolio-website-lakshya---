@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Navigation</title>
+    <link
+      rel="icon"
+      href="https://www.google.com/s2/favicons?domain=css-tricks.com"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- overlay  -->
+
+    <div class="overlay overlay-slide-left" id="overlay">
+      <nav>
+        <ul>
+          <li id="nav-1" class="slide-out-1">
+            <a href="#home">Home</a>
+          </li>
+          <li id="nav-2" class="slide-out-2">
+            <a href="#about">About</a>
+          </li>
+          <li id="nav-3" class="slide-out-3">
+            <a href="#skills">Skills</a>
+          </li>
+          <li id="nav-4" class="slide-out-4">
+            <a href="#projects">Projects</a>
+          </li>
+          <li id="nav-5" class="slide-out-5">
+            <a href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- menu bars  -->
+    <div class="menu-bars" id="menu-bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <!-- Sections -->
+    <section id="home">
+      <a href="#" target="_blank">Lakshya Roy</a>
+      <div class="home-wrapper">
+        <div>
+          <p class="name-changer">
+            <span class="text firsttext"> Hello, There! I'm </span>
+            <span class="text sectext"></span>
+          </p>
+          <p class="home-semi-header">
+            I am a BCA student currently in my second year of studies at Birla
+            Institute of Technology, Mesra.
+          </p>
+        </div>
+        <figure><img src="Code typing (1).gif" alt="coding guy" /></figure>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-flex">
+        <div>
+          <figure>
+            <img
+              src="../07-project/Red White Neon Circle Instagram Profile Picture.png"
+              alt=""
+            />
+          </figure>
+        </div>
+        <div class="flex">
+          <p>
+            <span class="about-header">Hello, There! I'm Lakshya Roy.</span>
+            <br />
+          </p>
+          <p>
+            I'm a junior frontend developer. I'm passionate about creating
+            engaging and responsive websites that deliver a great user
+            experience. I love to bring designs to life and work with teams to
+            create amazing digital products that make a difference. I enjoy
+            exploring new technologies, reading about web development
+          </p>
+
+          <div class="btn">
+            <!-- <a
+              href="https://drive.google.com/uc?export=download&id=1qYGqRg-qbHz16fdPnU4lhGy7GXhJq_DI
+            " -->
+            <a href="#">
+              <button>Download Resume</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2 class="skills-title">skills</h2>
+      <div class="card">
+        <div class="card-flex">
+          <i class="fa-brands fa-html5 fa-2xl"></i>
+          <h2>HTML5</h2>
+        </div>
+        <div class="card-flex">
+          <i class="fa-brands fa-css3-alt fa-2xl"></i>
+          <h2>CSS3</h2>
+        </div>
+        <div class="card-flex">
+          <i class="fa-brands fa-js fa-2xl"></i>
+          <h2>JAVASCRIPT</h2>
+        </div>
+        <div class="card-flex">
+          <i class="fa-brands fa-bootstrap fa-2xl"></i>
+          <h2>BOOTSTRAP</h2>
+        </div>
+        <div class="card-flex">
+          <i class="fa-brands fa-react fa-2xl"></i>
+          <h2>REACT</h2>
+        </div>
+        <div class="card-flex">
+          <i class="fa-brands fa-git fa-2xl"></i>
+          <h2>GIT</h2>
+        </div>
+        <div class="card-flex">
+          <i class="fa-brands fa-github fa-2xl"></i>
+          <h2>GITHUB</h2>
+        </div>
+        <div class="card-flex">
+          <img
+            src="pngwing.com.png"
+            alt="tailwind"
+            width="50px"
+            height="auto"
+          />
+          <h2 class="skill-title">tailwind</h2>
+        </div>
+      </div>
+    </section>
+    <section id="projects"><h1>These Are My Results</h1></section>
+    <section id="contact">
+      <div class="contactUs">
+        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+          <h1>Contact Us</h1>
+          <!-- Full Name -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="4e04a7c6-83d1-4521-839a-6bbca59ba387"
+          />
+
+          <div class="form-group">
+            <label for="Name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+              maxlength="100"
+            />
+          </div>
+          <!-- phone number -->
+          <div class="form-group">
+            <label for="Name">Phone Number</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              required
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            />
+          </div>
+          <!-- email -->
+          <div class="form-group">
+            <label for="email"> Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <!-- message -->
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
